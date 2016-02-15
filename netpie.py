@@ -26,9 +26,9 @@ myMotor.run(Adafruit_MotorHAT.FORWARD);
 # turn on motor
 myMotor.run(Adafruit_MotorHAT.RELEASE);
 
-gearkey = 'K0v7QsvD5AgzE0n'
-gearsecret =  'tGEE3SdcIpo2sDfzx3mHqKcm4Jd92s'
-appid = 'DollyProject'
+gearkey = DEFINE_HERE
+gearsecret = DEFINE_HERE
+appid = DEFINE_HERE
 
 client.create(gearkey,gearsecret,appid)
 
