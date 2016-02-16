@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>home</class>
+ <widget class="QWidget" name="home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #242424;</string>
+  </property>
+  <widget class="QPushButton" name="mode1Bt">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>93</y>
+     <width>138</width>
+     <height>145</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/mode_1.png</normaloff>:/img/mode_1.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>138</width>
+     <height>145</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mode2Bt">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>93</y>
+     <width>138</width>
+     <height>145</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/mode_2.png</normaloff>:/img/mode_2.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>138</width>
+     <height>145</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="mode3Bt">
+   <property name="geometry">
+    <rect>
+     <x>326</x>
+     <y>93</y>
+     <width>138</width>
+     <height>145</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/mode_3.png</normaloff>:/img/mode_3.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>138</width>
+     <height>145</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logoName">
+   <property name="geometry">
+    <rect>
+     <x>139</x>
+     <y>36</y>
+     <width>205</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resource.qrc">:/logoMenu</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>280</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>supermarket</family>
+     <pointsize>18</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>เลือกโหมดที่ต้องการ</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="indent">
+    <number>6</number>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

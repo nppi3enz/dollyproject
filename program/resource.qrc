@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="logoMenu">img/logo_menu.png</file>
+        <file alias="power">img/power.png</file>
+        <file alias="info">img/info.png</file>
+        <file>img/mode_2.png</file>
+        <file>img/mode_3.png</file>
+        <file>img/mode_1.png</file>
+        <file alias="logoMini">img/logo_mini.png</file>
+        <file alias="howto_remote">img/howto_remote.jpg</file>
+    </qresource>
+</RCC>
