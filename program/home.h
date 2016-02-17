@@ -28,12 +28,15 @@ private slots:
 
     void on_mode3Bt_clicked();
 
+    void close();
+
 private:
     Ui::home *ui;
     QPixmap* pPix;
     QPushButton *powerBtn;
     QPixmap* pPix2;
     QPushButton *infoBtn;
+
 };
 
 #endif // HOME_H

@@ -8,5 +8,6 @@
         <file>img/mode_1.png</file>
         <file alias="logoMini">img/logo_mini.png</file>
         <file alias="howto_remote">img/howto_remote.jpg</file>
+        <file>img/text_selectmode.png</file>
     </qresource>
 </RCC>

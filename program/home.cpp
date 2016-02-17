@@ -1,5 +1,7 @@
 #include "home.h"
 #include "ui_home.h"
+#include "QtDebug"
+
 home::home(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::home)
@@ -13,6 +15,7 @@ home::home(QWidget *parent) :
     powerBtn->setIconSize(pPix.rect().size());
     powerBtn->setFixedSize(pPix.rect().size());
     powerBtn->move(422, 263);
+    connect(powerBtn, SIGNAL(clicked()), this, SLOT(close()));
 
     QPixmap pPix2(":/info");
     QIcon ButtonIcon2(pPix2);
@@ -42,4 +45,9 @@ void home::on_mode2Bt_clicked()
 void home::on_mode3Bt_clicked()
 {
     emit changeMode(3);
+}
+
+void home::close()
+{
+    QApplication::quit();
 }
