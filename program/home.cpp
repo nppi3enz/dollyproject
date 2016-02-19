@@ -1,53 +1,37 @@
+#include <QWidget>
+#include <QPixmap>
+#include <QDebug>
 #include "home.h"
 #include "ui_home.h"
-#include "QtDebug"
 
-home::home(QWidget *parent) :
+Home::Home(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::home)
+    ui(new Ui::Home)
 {
     ui->setupUi(this);
-
-    QPixmap pPix(":/power");
-    QIcon ButtonIcon(pPix);
-    powerBtn = new QPushButton(this);
-    powerBtn->setIcon(ButtonIcon);
-    powerBtn->setIconSize(pPix.rect().size());
-    powerBtn->setFixedSize(pPix.rect().size());
-    powerBtn->move(422, 263);
-    connect(powerBtn, SIGNAL(clicked()), this, SLOT(close()));
-
-    QPixmap pPix2(":/info");
-    QIcon ButtonIcon2(pPix2);
-    infoBtn = new QPushButton(this);
-    infoBtn->setIcon(ButtonIcon2);
-    infoBtn->setIconSize(pPix.rect().size());
-    infoBtn->setFixedSize(pPix.rect().size());
-    infoBtn->move(5, 263);
-
+    connect(ui->closeBtn, SIGNAL(clicked()), this, SLOT(close()));
 }
 
-home::~home()
+Home::~Home()
 {
     delete ui;
 }
-
-void home::on_mode1Bt_clicked()
+void Home::on_mode1Bt_clicked()
 {
     emit changeMode(1);
 }
 
-void home::on_mode2Bt_clicked()
+void Home::on_mode2Bt_clicked()
 {
     emit changeMode(2);
 }
 
-void home::on_mode3Bt_clicked()
+void Home::on_mode3Bt_clicked()
 {
     emit changeMode(3);
 }
-
-void home::close()
+void Home::close()
 {
     QApplication::quit();
 }
+

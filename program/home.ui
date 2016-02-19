@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>home</class>
- <widget class="QWidget" name="home">
+ <class>Home</class>
+ <widget class="QWidget" name="Home">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,19 +11,32 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
-  </property>
-  <property name="autoFillBackground">
-   <bool>false</bool>
+   <string>Home</string>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: #242424;</string>
   </property>
+  <widget class="QLabel" name="lblLogo">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>30</y>
+     <width>205</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="resource.qrc">:/img/logo_menu.png</pixmap>
+   </property>
+  </widget>
   <widget class="QPushButton" name="mode1Bt">
    <property name="geometry">
     <rect>
-     <x>19</x>
-     <y>93</y>
+     <x>20</x>
+     <y>90</y>
      <width>138</width>
      <height>145</height>
     </rect>
@@ -45,8 +58,8 @@
   <widget class="QPushButton" name="mode2Bt">
    <property name="geometry">
     <rect>
-     <x>172</x>
-     <y>93</y>
+     <x>170</x>
+     <y>90</y>
      <width>138</width>
      <height>145</height>
     </rect>
@@ -68,8 +81,8 @@
   <widget class="QPushButton" name="mode3Bt">
    <property name="geometry">
     <rect>
-     <x>326</x>
-     <y>93</y>
+     <x>320</x>
+     <y>90</y>
      <width>138</width>
      <height>145</height>
     </rect>
@@ -87,33 +100,60 @@
      <height>145</height>
     </size>
    </property>
-   <property name="checkable">
-    <bool>false</bool>
-   </property>
   </widget>
-  <widget class="QLabel" name="logoName">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>139</x>
-     <y>36</y>
-     <width>205</width>
-     <height>25</height>
+     <x>10</x>
+     <y>260</y>
+     <width>53</width>
+     <height>53</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
-   <property name="pixmap">
-    <pixmap resource="resource.qrc">:/logoMenu</pixmap>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/info.png</normaloff>:/img/info.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>53</width>
+     <height>53</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeBtn">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>260</y>
+     <width>53</width>
+     <height>53</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/img/power.png</normaloff>:/img/power.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>53</width>
+     <height>53</height>
+    </size>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>290</y>
-     <width>121</width>
-     <height>21</height>
+     <y>280</y>
+     <width>119</width>
+     <height>19</height>
     </rect>
    </property>
    <property name="text">
@@ -123,20 +163,8 @@
     <pixmap resource="resource.qrc">:/img/text_selectmode.png</pixmap>
    </property>
   </widget>
-  <widget class="QLabel" name="status">
-   <property name="geometry">
-    <rect>
-     <x>178</x>
-     <y>256</y>
-     <width>121</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>STATUS</string>
-   </property>
-  </widget>
  </widget>
+ <layoutdefault spacing="6" margin="11"/>
  <resources>
   <include location="resource.qrc"/>
  </resources>

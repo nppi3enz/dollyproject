@@ -2,41 +2,27 @@
 #define HOME_H
 
 #include <QWidget>
-#include <QPixmap>
-#include <QPushButton>
-#include <QStackedWidget>
 
 namespace Ui {
-class home;
+class Home;
 }
 
-class home : public QWidget
+class Home : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit home(QWidget *parent = 0);
-    ~home();
-
+    explicit Home(QWidget *parent = 0);
+    ~Home();
 signals:
     void changeMode(int);
-
 private slots:
     void on_mode1Bt_clicked();
-
     void on_mode2Bt_clicked();
-
     void on_mode3Bt_clicked();
-
     void close();
-
 private:
-    Ui::home *ui;
-    QPixmap* pPix;
-    QPushButton *powerBtn;
-    QPixmap* pPix2;
-    QPushButton *infoBtn;
-
+    Ui::Home *ui;
 };
 
 #endif // HOME_H
